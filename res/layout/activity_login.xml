@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EFF4F0" >
+    
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="70dip"
+        android:layout_marginBottom="70dip"
+        android:layout_marginLeft="100dip"
+        android:layout_marginRight="100dip"
+        android:background="@drawable/login_body_border"    
+        android:orientation="vertical"   
+        >
+        <ImageView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/logintitle"
+            android:layout_marginTop="30dip"
+            android:layout_marginLeft="80dip"
+            />
+        <LinearLayout 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@drawable/login_body_border"
+            android:layout_marginLeft="80dip"
+            android:layout_marginRight="80dip"
+            android:layout_marginTop="20dip"
+            android:layout_marginBottom="20dip"
+            >
+            <ImageView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/login2"
+            android:layout_margin="15dip"
+            />
+            
+            <LinearLayout 
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/login"
+                android:orientation="vertical"
+                 android:layout_margin="15dip"
+                >
+                <LinearLayout 
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="60dip"
+                    android:layout_marginLeft="30dip"
+                    >
+                    <TextView 
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="用户名："
+                        android:textColor="#818181"
+                        />
+                    <EditText 
+                        android:id="@+id/txtName"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:singleLine="true"
+                        />
+                </LinearLayout>
+                 <LinearLayout 
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="10dip"
+                    android:layout_marginLeft="30dip"
+                    >
+                    <TextView 
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="密   码："
+                        android:textColor="#818181"
+                        />
+                    <EditText 
+                        android:id="@+id/txtPassWord"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:singleLine="true"
+                        android:password="true"
+                        />
+                </LinearLayout>
+                
+                 <Button 
+                     android:id="@+id/btnLogin"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:background="@drawable/btnlogin"
+                     android:layout_marginLeft="85dip"
+                     android:layout_marginTop="5dip"
+                     />
+                
+            </LinearLayout>
+        </LinearLayout>
+        
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dip"
+            android:text="Copyright(C) 2010 YunyingSan All Rights Reserved. "
+            android:textColor="#818181"
+            android:textSize="14sp"
+            />
+    </LinearLayout>
+   
+</RelativeLayout>
